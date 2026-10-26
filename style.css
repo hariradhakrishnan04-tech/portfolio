@@ -1,0 +1,547 @@
+/*==========================
+  GOOGLE FONT
+==========================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background: #F5F7FA;
+    color: #222;
+}
+#about{
+    background:#89a3a0;
+}
+
+#skills{
+    background:#0E5B53;
+}
+
+#projects{
+    background:#0E5B53;
+}
+
+#contact{
+    background:#0E5B53;
+}
+
+footer{
+    background:#0E5B53;
+}
+/*==========================
+  NAVBAR
+==========================*/
+
+.navbar{
+    background:transparent;
+    transition:.4s;
+    padding:18px 0;
+}
+
+.navbar.scrolled{
+    background:#0E5B53;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.navbar-brand{
+    color:#fff;
+    font-size:32px;
+    font-weight:800;
+}
+
+.navbar-brand:hover{
+    color:#00d084;
+}
+
+.nav-link{
+    color:#fff;
+    margin-left:20px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#00d084;
+}
+
+.download-btn{
+    background:#fff;
+    color:#0E5B53;
+    border-radius:30px;
+    padding:10px 24px;
+    font-weight:600;
+}
+
+.download-btn:hover{
+    background:#00d084;
+    color:#fff;
+}
+
+/*==========================
+ HERO
+==========================*/
+
+.hero{
+    background:#0E5B53;
+    min-height:100vh;
+    position:relative;
+    display:flex;
+    align-items:center;
+    color:#fff;
+    overflow:hidden;
+}
+
+.hero-left h5{
+    letter-spacing:3px;
+    color:#ddd;
+    margin-bottom:20px;
+}
+
+.hero-left h1{
+    font-size:65px;
+    font-weight:800;
+    margin-bottom:15px;
+}
+
+.hero-left h2{
+    color:#00d084;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.hero-left p{
+    color:#ddd;
+    line-height:30px;
+    max-width:520px;
+}
+
+.hero-buttons{
+    margin-top:35px;
+}
+
+.hero-buttons .btn{
+    padding:14px 35px;
+    border-radius:40px;
+    margin-right:15px;
+    font-weight:600;
+}
+
+.hero-buttons .btn-dark{
+    background:#111;
+    border:none;
+}
+
+.hero-buttons .btn-dark:hover{
+    transform:translateY(-5px);
+}
+
+.hero-buttons .btn-outline-light:hover{
+    color:#0E5B53;
+}
+
+.hero-info{
+    margin-top:30px;
+    display:flex;
+    align-items:center;
+}
+
+.hero-info i{
+    color:#00d084;
+    margin-right:8px;
+}
+
+/*==========================
+RIGHT SIDE
+==========================*/
+
+/*==========================
+ HERO RIGHT
+==========================*/
+
+.hero-right{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:650px;
+}
+
+.circle-bg{
+    position:absolute;
+    width:520px;
+    height:520px;
+    background:#fff;
+    border-radius:50%;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:1;
+}
+
+.image-box{
+    position:absolute;
+    width:460px;
+    height:460px;
+    border-radius:50%;
+    overflow:hidden;
+    right:30px;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:2;
+}
+
+.profile-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center top;
+    display:block;
+    border-radius:50%;
+}
+
+.experience-card{
+    position:absolute;
+    left:20px;
+    bottom:100px;
+    background:#fff;
+    color:#111;
+    width:170px;
+    padding:20px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 20px 40px rgba(0,0,0,.18);
+    z-index:5;
+}
+
+.experience-card h1{
+    font-size:56px;
+    font-weight:800;
+    margin-bottom:5px;
+}
+
+.experience-card p{
+    font-size:20px;
+    line-height:28px;
+}
+/*==========================
+ABOUT
+==========================*/
+
+#about img{
+    border-radius:25px;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+#about h3{
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+#about p{
+    color:#666;
+    line-height:30px;
+}
+
+/*==========================
+SKILLS
+==========================*/
+
+.skill-card{
+    background:#fff;
+    padding:35px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.4s;
+    margin-bottom:30px;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+}
+
+.skill-card i{
+    font-size:55px;
+    color:#0E5B53;
+    margin-bottom:20px;
+}
+
+.skill-card h4{
+    font-weight:600;
+}
+
+/*==========================
+PROJECTS
+==========================*/
+
+#projects{
+    background:#f8f9fa;
+}
+
+.project-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+}
+
+.project-card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.project-card h4{
+    padding:20px;
+    text-align:center;
+}
+
+/* Contact Info */
+
+.contact-info{
+    color:#fff;
+}
+
+.contact-info h3{
+    font-size:32px;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.contact-info p{
+    color:#ddd;
+    line-height:28px;
+    margin-bottom:30px;
+}
+
+.contact-item{
+    display:flex;
+    align-items:center;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+.contact-item i{
+    width:50px;
+    height:50px;
+    background:#00D084;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-right:15px;
+    font-size:20px;
+}
+
+/* Social Icons */
+
+.social-icons{
+    display:flex;
+    gap:20px;
+}
+
+.social-icons a{
+    width:55px;
+    height:55px;
+    background:#fff;
+    color:#0E5B53;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:24px;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    background:#00D084;
+    color:#fff;
+    transform:translateY(-6px) scale(1.1);
+}
+
+/*==========================
+FOOTER
+==========================*/
+
+footer{
+    background:#063c36;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+}
+
+/*==========================
+ANIMATIONS
+==========================*/
+
+.hero-left{
+    animation:leftMove 1s ease;
+}
+
+.hero-right{
+    animation:rightMove 1s ease;
+}
+
+@keyframes leftMove{
+
+from{
+opacity:0;
+transform:translateX(-80px);
+}
+
+to{
+opacity:1;
+transform:translateX(0);
+}
+
+}
+
+@keyframes rightMove{
+
+from{
+opacity:0;
+transform:translateX(80px);
+}
+
+to{
+opacity:1;
+transform:translateX(0);
+}
+
+}
+
+/*==========================
+RESPONSIVE
+==========================*/
+
+@media(max-width:991px){
+
+.hero{
+    text-align:center;
+    padding-top:120px;
+}
+
+.hero-left h1{
+    font-size:48px;
+}
+
+.hero-left h2{
+    font-size:28px;
+}
+
+.circle-bg{
+    position:relative;
+    width:320px;
+    height:320px;
+    margin:auto;
+    right:0;
+    transform:none;
+}
+
+.profile-img{
+    width:280px;
+    margin-top:-300px;
+}
+
+.experience-card{
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-30px;
+}
+
+.hero-buttons .btn{
+    margin-bottom:15px;
+}
+
+.nav-link{
+    margin-left:0;
+    margin-top:15px;
+}
+
+.download-btn{
+    margin-top:20px;
+}
+
+}
+/*==========================
+MY JOURNEY
+==========================*/
+
+#journey{
+    background:#F8FAFC;
+}
+
+.timeline{
+    position:relative;
+    max-width:900px;
+    margin:auto;
+}
+
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:22px;
+    top:0;
+    width:4px;
+    height:100%;
+    background:#00D084;
+}
+
+.timeline-item{
+    position:relative;
+    padding-left:70px;
+    margin-bottom:50px;
+}
+
+.timeline-dot{
+    position:absolute;
+    left:12px;
+    top:10px;
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    background:#00D084;
+    border:5px solid #fff;
+    box-shadow:0 0 15px rgba(0,208,132,.5);
+}
+
+.timeline-content{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.timeline-content:hover{
+    transform:translateY(-5px);
+}
+
+.timeline-content span{
+    color:#00D084;
+    font-weight:600;
+}
+
+.timeline-content h4{
+    margin:10px 0;
+    color:#0E5B53;
+    font-weight:700;
+}
+
+.timeline-content p{
+    color:#666;
+    line-height:28px;
+}
